@@ -1,1 +1,46 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9850231&assignment_repo_type=AssignmentRepo)
+# FN-projekt
+## Databasen
+- Hur är den uppbyggd?
+
+## Webbsidan
+### Hur kör man den?
+Man skriver "npm run serve" i konsollen
+Om det inte fungerar och man får felmeddelandet:
+```
+ Syntax Error: Error: Loading PostCSS Plugin failed: Cannot find module 'tailwindcss' 
+```
+
+så behöver man skriva: 
+
+```
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9"
+```
+
+### Hur är den uppbyggd?
+
+
+# README filen i originella projektet
+## fn-projekt-sql
+
+### Project setup
+```
+npm install
+```
+
+#### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+#### Compiles and minifies for production
+```
+npm run build
+```
+
+#### Lints and fixes files
+```
+npm run lint
+```
+
+#### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
