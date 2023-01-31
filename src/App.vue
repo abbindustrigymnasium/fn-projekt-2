@@ -6,6 +6,13 @@
     </div>
   </div>
   <router-view></router-view>
+  <footer class="bg-themeblue-200 text-white p-6">
+    <div class="container mx-auto">
+      <router-link to="/">Home </router-link> <br />
+      <router-link to="/about"> About Us</router-link>
+      <p class="text-center mt-2">Copyright &copy; Basgrupp 2 2023</p>
+    </div>
+  </footer>
 </template>
 
 <script>
