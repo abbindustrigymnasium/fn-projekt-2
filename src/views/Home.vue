@@ -1,6 +1,9 @@
 <template>
   <div>
     <Karusell />
+    <div class="h-96 p-20">
+      <p>Hej jag heter bengt</p>
+    </div>
   </div>
 </template>
 

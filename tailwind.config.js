@@ -18,8 +18,11 @@ module.exports = {
         100: "#11296B",
         200: "#00274C"
       },
-
-
+    },
+    height: {
+      SHeight1: '200px',
+      SHeight2: '400px',
+      SHeight3: '600px'
     },
     extend: {},
   },

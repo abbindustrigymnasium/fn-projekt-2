@@ -1,19 +1,18 @@
 <template>
-  <div class="bg-truegray-300 px-6 py-4 h-screen">
+  <div>
     <Carousel
       :wrap-around="true"
       :breakpoints="breakpoints"
-      :autoplay="3000"
-      class="bg-truegray-100"
+      :autoplay="5000"
     >
       <Slide
         v-for="slide in slides"
         :key="slide.id"
-        class="bg-themeblue-100 pb-4 h-1/4"
+        class="pb-4 2xl:h-SHeight3 md:h-SHeight2 h-SHeight1"
       >
-        <div class="carousel__item p-4 bg-amber-300 w-11/12 h-full">
-          <h3>{{ slide.title }}</h3>
-          <p>{{ slide.content }}</p>
+        <div class="p-4 w-full h-full">
+          <!-- <h3>{{ slide.title }}</h3>
+          <p>{{ slide.content }}</p> -->
           <img :src="`${slide.src}`" class="w-full h-full object-cover" />
         </div>
       </Slide>
