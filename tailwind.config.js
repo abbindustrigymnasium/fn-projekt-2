@@ -30,7 +30,16 @@ module.exports = {
 
 
     },
-    extend: {},
+    extend: {
+      height: {
+        '100': '25rem',
+        '104': '26rem',
+      },
+      width: {
+        '100': '25rem',
+        '104': '26rem',
+      }
+    },
   },
   variants: {
     extend: {},
