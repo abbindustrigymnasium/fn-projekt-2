@@ -10,6 +10,7 @@ module.exports = {
       teal: colors.teal,
       amber: colors.amber,
       truegray: colors.trueGray,
+      white: colors.white,
       themeyellow: {
         100: "#FFDB57",
         200: "#FFCB05"
@@ -24,7 +25,11 @@ module.exports = {
       SHeight2: '400px',
       SHeight3: '600px'
     },
-    extend: {},
+    extend: {
+      blur: {
+        xs: '2px',
+      }
+    },
   },
   variants: {
     extend: {},
