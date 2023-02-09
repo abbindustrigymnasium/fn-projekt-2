@@ -4,21 +4,46 @@
       <Karusell />
     </div>
     <div class="flex row mt-28">
-      <div class="h-96 mr-10 ml-10 w-1/2">
-        <h1 class="text-xl mb-3">OHELGA NAAAAAATT</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Lacinia at quis risus sed. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elementum
-        pulvinar etiam non quam lacus suspendisse. Mauris pharetra et ultrices neque ornare aenean euismod. Neque gravida in
-        fermentum et. Amet massa vitae tortor condimentum lacinia quis vel. Eu consequat ac felis donec et. Aliquam id diam
-        maecenas ultricies mi eget mauris. Quis risus sed vulputate odio. Eu tincidunt tortor aliquam nulla facilisi cras.
-        Nullam non nisi est sit amet. Egestas integer eget aliquet nibh. Ut faucibus pulvinar elementum integer enim.</p>
-        <div class="flex row justify-center my-7">
-        <router-link to="/cities" class="h-12 w-32 bg-themeblue-200 text-white rounded-full p-1 mr-16 transform hover:scale-105 transition duration-500 ease-in-out hover:bg-themeblue-100">Jämför</router-link>
-        <router-link to="/about" class="h-12 w-32 bg-themeblue-200 text-white rounded-full p-1 ml-16 transform hover:scale-105 transition duration-500 ease-in-out hover:bg-themeblue-100">About us</router-link>
-        </div>  
+      <div class="h-96 mr-10 ml-10">
+        <h1 class="text-xl mb-5">Rubrik</h1>
+        <div class="flex row jutify-evenly">
+        <div class="flex justify-between row text-left mb-20">
+          <div class="w-1/2 flex flex-col">
+            <p class=" mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. A diam maecenas sed enim ut sem viverra aliquet. Semper eget duis at tellus. Fames ac turpis egestas sed tempus
+            urna et pharetra. Vel turpis nunc eget lorem dolor sed viverra. Eu ultrices vitae auctor eu augue ut lectus arcu
+            bibendum. Ac auctor augue mauris augue neque gravida in. Consequat id porta nibh venenatis cras sed felis. Sagittis orci
+            a scelerisque purus semper eget duis. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. In massa tempor
+            nec feugiat nisl pretium fusce id velit.</p>
+            <p class="mx-3 mt-2">
+            Vulputate ut pharetra sit amet aliquam id. Eget magna fermentum iaculis eu non diam. Dictum varius duis at consectetur
+            lorem donec massa sapien faucibus. Ultrices mi tempus imperdiet nulla. Sem et tortor consequat id.
+            </p>
+          </div>
+      <div class="w-1/2 flex flex-col place-items-center">
+        <p class=" mx-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna
+          aliqua. A diam maecenas sed enim ut sem viverra aliquet. Semper eget duis at tellus. Fames ac turpis egestas sed
+          tempus
+          urna et pharetra. Vel turpis nunc eget lorem dolor sed viverra. Eu ultrices vitae auctor eu augue ut lectus arcu
+          bibendum. Ac auctor augue mauris augue neque gravida in. Consequat id porta nibh venenatis cras sed felis. Sagittis
+          orci
+          a scelerisque purus semper eget duis.</p>
+        <p class="mx-2 mt-2">
+          Vulputate ut pharetra sit amet aliquam id. Eget magna fermentum iaculis eu non diam. Dictum varius duis at
+          consectetur
+          lorem donec massa sapien faucibus. Ultrices mi tempus imperdiet nulla. Sem et tortor consequat id. 
+        </p>
+        <div class="flex row w-full justify-center space-x-10">
+        <router-link to="/compare" class="h-8 w-1/4 bg-themeblue-200 p-1 text-white rounded-full transform hover:scale-105 transition duration-500 ease-in-out hover:bg-themeblue-100 flex place-content-center mt-6">Jämför</router-link>
+        <router-link to="/top10"
+          class="h-8 w-1/4 bg-themeblue-200 text-white p-1 rounded-full transform hover:scale-105 transition duration-500 ease-in-out hover:bg-themeblue-100 flex place-content-center mt-6">Top 10</router-link>
       </div>
-      <div class=" mr-5">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sLgf6bCvUFxwQ_5TnXxSDeK-5dug_kP5Nw&usqp=CAU" alt="" class="w-96 h-96">
+      </div>
+      </div>
+      </div>
+        
+      
       </div>
     </div>
   </div>
