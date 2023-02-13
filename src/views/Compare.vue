@@ -60,7 +60,7 @@
       </label>
       <div class="item error" v-if="input && !filteredList().length"></div>
     </div>
-    <button
+    <!-- <button
       class="
         text-white text-md
         md:text-xl
@@ -77,7 +77,7 @@
       "
     >
       Bekräfta
-    </button>
+    </button> -->
   </div>
 </template>
 

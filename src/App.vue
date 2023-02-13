@@ -2,18 +2,18 @@
   <div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/cities">Städer</router-link> |
       <router-link to="/about">About</router-link>
     </div>
   </div>
   <router-view></router-view>
   <footer class="bg-themeblue-200 text-white p-6">
     <div class="container mx-auto">
-      <router-link to="/">Home </router-link> <br />
-      <router-link to="/cities">Städer </router-link> <br />
-      <router-link to="/about"> About Us</router-link>
-      <p class="text-center mt-2">Copyright &copy; Basgrupp 2 2023</p>
+      <router-link to="/" class>Home </router-link> |
+      <router-link to="/about"> About Us </router-link> |
+      <router-link to="/compare">Jämför </router-link> |
+      <router-link to="/top10">Top 10 </router-link>
     </div>
+    <p class="text-center mt-2">Copyright &copy; Basgrupp 2 2023</p>
   </footer>
 </template>
 
