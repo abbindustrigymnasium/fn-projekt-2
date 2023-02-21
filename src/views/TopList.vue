@@ -23,7 +23,7 @@
     mounted() {
       axios.get('http://localhost:3000/api/country-population')
         .then(response => {
-          this.countries = response.data.filter((country) => country.year === 2020);
+          this.countries = response.data.filter((country) => country.year === 2021);
         })
         .catch(error => {
           console.error(error);
