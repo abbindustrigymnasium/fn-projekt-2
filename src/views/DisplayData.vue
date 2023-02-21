@@ -3,7 +3,7 @@
       <h2>Country List</h2>
       <ul>
         <li v-for="country in countries" :key="country.id">
-          {{ country.name }} + {{ country.energy_cons }} + {{ country.year }}
+          {{ country.name }} - {{ country.energy_cons }} + {{ country.year }}
         </li>
       </ul>
     </div>
@@ -22,7 +22,7 @@
     mounted() {
       axios.get('http://localhost:3000/api/country-population')
         .then(response => {
-          this.countries = response.data;
+          this.countries = response.data.filter((country)=> country.year === 2020)
         })
         .catch(error => {
           console.error(error);
