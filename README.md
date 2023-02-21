@@ -15,6 +15,18 @@ så behöver man skriva:
 ```
 npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9"
 ```
+Om det inte fungerar och man får felmeddelandet:
+
+```
+ Error blabla carousel 
+```
+så behöver man skriva: 
+
+```
+npm install --save vue3-carousel
+```
+
+
 
 ### Hur är den uppbyggd?
 
