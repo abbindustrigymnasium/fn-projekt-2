@@ -9,6 +9,9 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
+      yellow: colors.yellow,
+      red: colors.red,
+      pink: colors.pink,
       indigo: colors.indigo,
       red: colors.red,
       green: colors.green,
@@ -27,7 +30,16 @@ module.exports = {
 
 
     },
-    extend: {},
+    extend: {
+      height: {
+        '100': '25rem',
+        '104': '26rem',
+      },
+      width: {
+        '100': '25rem',
+        '104': '26rem',
+      }
+    },
   },
   variants: {
     extend: {},
