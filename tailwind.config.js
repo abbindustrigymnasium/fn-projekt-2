@@ -7,6 +7,15 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      yellow: colors.yellow,
+      red: colors.red,
+      pink: colors.pink,
+      indigo: colors.indigo,
+      red: colors.red,
+      green: colors.green,
+      fuchsia: colors.fuchsia,
       teal: colors.teal,
       amber: colors.amber,
       truegray: colors.trueGray,
@@ -23,11 +32,16 @@ module.exports = {
     height: {
       SHeight1: '200px',
       SHeight2: '400px',
-      SHeight3: '600px'
+      SHeight3: '600px',
+      '100': '25rem',
+      '104': '26rem',
     },
     extend: {
       blur: {
         xs: '2px',
+      width: {
+        '100': '25rem',
+        '104': '26rem',
       }
     },
   },
