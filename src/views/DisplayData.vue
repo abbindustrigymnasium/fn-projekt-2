@@ -3,7 +3,7 @@
       <h2>Country List</h2>
       <ul>
         <li v-for="country in countries" :key="country.id">
-          {{ country.name }} - {{ country.energy_cons }} + {{ country.year }}
+          {{ country.name }}
         </li>
       </ul>
     </div>
