@@ -7,6 +7,7 @@ const routes = [
     name: 'Home',
     component: Home
   },
+
   {
     path: '/about',
     name: 'About',
@@ -16,6 +17,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+
+   
+=======
     path: '/top10',
     name: 'Top-10',
     component: () => import(/* webpackChunkName: "about" */ '../views/Top10.vue')
@@ -25,6 +29,23 @@ const routes = [
     name: 'Jämför',
     component: () => import(/* webpackChunkName: "about" */ '../views/Compare.vue')
   }
+
+
+ path: '/DisplayData',
+    name: 'DisplayData',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/DisplayData.vue')
+  },
+  {
+    path: '/TopList',
+    name: 'TopList',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/TopList.vue')
+  },
 ]
 
 const router = createRouter({
@@ -33,3 +54,5 @@ const router = createRouter({
 })
 
 export default router
+
+
