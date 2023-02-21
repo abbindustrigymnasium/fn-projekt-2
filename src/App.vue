@@ -3,6 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <div class="justify-end">
+        <router-link id="signButton" to="/signin">Sign In</router-link>
+      </div>
     </div>
   </div>
   <router-view></router-view>
@@ -11,7 +14,7 @@
       <router-link to="/" class>Home </router-link> |
       <router-link to="/about"> About Us </router-link> |
       <router-link to="/compare">Jämför </router-link> |
-      <router-link to="/top10">Top 10 </router-link>
+      <router-link to="/toplist">Top 10 </router-link>
     </div>
     <p class="text-center mt-2">Copyright &copy; Basgrupp 2 2023</p>
   </footer>
@@ -50,5 +53,11 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #5772be;
+}
+
+#signButton{
+  padding: 20px;
+  display: flex;
+  justify-content: right;
 }
 </style>

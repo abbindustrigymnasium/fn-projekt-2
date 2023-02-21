@@ -4,59 +4,46 @@
     <span class="absolute inset-y-0 left-0 flex items-center pl-2">
       <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
     </span>
-    <input
-      placeholder="Sök..."
-      class="flex items-center bg-truegray-200 w-4/5 h-10 my-4 px-10 rounded-lg"
-      v-model="input"
-      type="text"
-    />
+    <input placeholder="Sök..." class="flex items-center bg-truegray-200 w-4/5 h-10 my-4 px-10 rounded-lg" v-model="input"
+      type="text" />
 
-    <div
-      class="
-        w-full
-        md:w-4/5
-        h-2/3
-        grid grid-cols-3
-        gap-2
-        md:gap-4
-        bg-truegray-100
-        p-2
-        md:p-4
-        auto-rows-min
-        overflow-auto
-        rounded-lg
-      "
-    >
-      <label
-        v-for="city in filteredList()"
-        :key="city"
-        class="
-          text-white
-          flex
-          items-center
-          justify-center
-          bg-themeblue-100
-          rounded-2xl
-          h-28
+    <div class="
+          w-full
+          md:w-4/5
+          h-2/3
           grid grid-cols-3
-        "
-      >
-        <input
-          type="checkbox"
-          class="
-            form-tick
-            h-4
-            w-4
-            md:h-6 md:w-6
-            mx-2
-            md:mx-4
-            border border-gray-300
-            rounded-md
-            checked:bg-blue-600 checked:border-transparent
-            focus:outline-none
-          "
-        />
-        <p class="sm:text-md md:text-2xl">{{ city }}</p>
+          gap-2
+          md:gap-4
+          bg-truegray-100
+          p-2
+          md:p-4
+          auto-rows-min
+          overflow-auto
+          rounded-lg
+        ">
+      <label v-for="city in filteredList()" :key="city" class="
+            text-white
+            flex
+            items-center
+            justify-center
+            bg-themeblue-100
+            rounded-2xl
+            h-28
+            grid grid-cols-3
+          ">
+        <input type="checkbox" class="
+              form-tick
+              h-4
+              w-4
+              md:h-6 md:w-6
+              mx-2
+              md:mx-4
+              border border-gray-300
+              rounded-md
+              checked:bg-blue-600 checked:border-transparent
+              focus:outline-none
+            " />
+        <p class="sm:text-md md:text-2xl">{{ city.name }}</p>
       </label>
       <div class="item error" v-if="input && !filteredList().length"></div>
     </div>
@@ -82,18 +69,51 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
-let input = ref("")
-const cities = [
-  'Sverige', 'Norge', 'Finland', 'Danmark', 'Tyskland', 'Frankrike', 'Nederländerna', 'Island', 'Belgien', 'Österrike', 'Luxemburg', 'Spanien', 'Portugal', 'Polen', 'Albanien', 'Serbien', 'Bosnien', 'Grekland', 'Kroatien', 'Tjeckien', 'Estland', 'Lettland', 'Litauen', 'Ukraina', 'Ungern', 'Bulgarien', 'Rumänien', 'Montenegro', 'Moldavien', 'Monaco', 'Vatikanstaten', 'Makedonien'
-]
+import { ref, reactive, onMounted} from 'vue';
+import axios from 'axios';
 
-function filteredList () {
-  return cities.filter((city) =>
-    city.toLowerCase().includes(input.value.toLowerCase())
+let input = ref("")
+
+const cities = reactive({
+  countries: []
+});
+
+const fetchCountries = async () => {
+  try {
+    const response = await axios.get('http://localhost:3000/api/country-population');
+    const countriesData = response.data.filter((country) => country.year === 2021);
+    cities.countries = countriesData.map((country) => ({ name: country.name }));
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
+function filteredList(){
+  // console.log(cities.countries.name)
+  return cities.countries.filter((city) =>
+  city.name.toLowerCase().startsWith(input.value.toLowerCase())
   )
 }
+
+onMounted(fetchCountries);
+
+
+// console.log(cities.countries)
+// cities.countries.filter(checkCountry);
+
+
+    // city.name.toLowerCase().includes(input.value.toLowerCase())
+
+// function checkCountry(cityFilter){
+//   return cityFilter.name.toLowerCase().includes(input.value.toLowerCase());
+// }
+
+
+
+
+
+
 </script>
 
-<style>
-</style>
+<style></style>
