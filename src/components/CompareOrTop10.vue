@@ -29,7 +29,7 @@
       </div>
     </router-link>
     <router-link
-      to="/top10"
+      to="/toplist"
       class="
         bg-truegray-900
         w-full
