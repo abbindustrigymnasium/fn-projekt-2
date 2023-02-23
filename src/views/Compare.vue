@@ -97,23 +97,6 @@ function filteredList(){
 }
 
 onMounted(fetchCountries);
-
-
-// console.log(cities.countries)
-// cities.countries.filter(checkCountry);
-
-
-    // city.name.toLowerCase().includes(input.value.toLowerCase())
-
-// function checkCountry(cityFilter){
-//   return cityFilter.name.toLowerCase().includes(input.value.toLowerCase());
-// }
-
-
-
-
-
-
 </script>
 
 <style></style>

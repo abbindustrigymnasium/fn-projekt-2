@@ -3,9 +3,6 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <div class="justify-end">
-        <router-link id="signButton" to="/signin">Sign In</router-link>
-      </div>
     </div>
   </div>
   <router-view></router-view>
@@ -53,11 +50,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #5772be;
-}
-
-#signButton{
-  padding: 20px;
-  display: flex;
-  justify-content: right;
 }
 </style>
