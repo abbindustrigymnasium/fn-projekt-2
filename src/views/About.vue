@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen mb-5">
+  <div class="min-h-screen mb-5">
     <div class="text-4xl mb-10">
       <h1>Vi är basgrupp 2</h1>
     </div>
