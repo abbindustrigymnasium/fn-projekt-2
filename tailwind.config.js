@@ -39,14 +39,15 @@ module.exports = {
     extend: {
       blur: {
         xs: '2px',
-      width: {
-        '100': '25rem',
-        '104': '26rem',
-      }
+        width: {
+          '100': '25rem',
+          '104': '26rem',
+        }
+      },
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    variants: {
+      extend: {},
+    },
+    plugins: [],
+  }
 }
