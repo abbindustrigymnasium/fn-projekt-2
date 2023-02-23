@@ -8,7 +8,7 @@ Vi har skapat en websida för att försöka uppmärksamma om elkonsumtionen i ol
 
 Vi har använt prisma för databasen
 
-(bild på relationsdatabasen?)
+![relationsdiagram](https://github.com/abbindustrigymnasium/fn-projekt-2/blob/main/Sk%C3%A4rmbild%202023-02-23%20122529.png?raw=true)
 
 Prisma-servern ligger i ett annat repository: https://github.com/abbindustrigymnasium/FN-Projekt-2-backend/tree/master
 
